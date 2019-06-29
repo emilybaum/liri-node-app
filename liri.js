@@ -7,7 +7,7 @@ var inquirer = require('inquirer');
 var Spotify = require('node-spotify-api');
 
 var command = process.argv[2]
-var whatToSearch = process.argv.slice(3).join(" ");
+var whatToSearch = process.argv.slice(3).join("+");
 
 // COMMANDS TO WRITE
     // concert-this
@@ -17,6 +17,8 @@ var whatToSearch = process.argv.slice(3).join(" ");
 
 switch (command) {
     case 'concert-this': console.log("concert-this selected");
+        searchBands(whatToSearch);
+        // console.log("search term: " + whatToSearch)
     break;
 
     case 'spotify-this-song': console.log("spotify-this-song selected");
@@ -31,6 +33,7 @@ switch (command) {
 }
 
 var divider = "\n--------------------------------------------------------\n"
+
 function searchSpotify(term) {
     var spotify = new Spotify(keys.spotify);
     console.log(term + " was searched");
@@ -57,18 +60,38 @@ function searchSpotify(term) {
         });
 
         console.log(divider + details + divider)
-
     });
-
 }
-// node liri.js spotify-this-song '<song name here>'
-// This will show the following information about the song in your terminal/bash window
-    // Artist(s)
-    // The song's name
-    // A preview link of the song from Spotify
-    // The album that the song is from
-    // If no song is provided then your program will default to "The Sign" by Ace of Base.
 
+
+function searchBands(term) {
+    var API = keys.bandsInTown;
+    var url = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API;
+    console.log(url)
+
+    axios.get("https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API)
+        .then(function (response) {
+            
+            var venue = response.data[0].venue.name;
+            var location = response.data[0].venue.city + ", " + response.data[0].venue.region;
+
+            // Date of the Event(use moment to format this as "MM/DD/YYYY")
+            var date = response.data[0].datetime;
+
+            var details = [
+                "Venue: " + venue,
+                "Location: " + location,
+                "Date: " + date,
+            ].join("\n")
+            console.log(divider + details + divider);
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+        .finally(function () {
+        });
+}
 
         
 // node liri.js concert-this '<_____>'
