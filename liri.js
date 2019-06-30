@@ -7,43 +7,43 @@ var inquirer = require('inquirer');
 var Spotify = require('node-spotify-api');
 
 var command = process.argv[2]
-var whatToSearch = process.argv.slice(3).join("+");
+var whatToSearch = process.argv.slice(3).join(" ");
 
-// COMMANDS TO WRITE
-    // concert-this
-    // spotify-this-song
-    // movie-this
-    // do-what-it-says
-
-switch (command) {
-    case 'concert-this': console.log("concert-this selected");
-        searchBands(whatToSearch);
-        // console.log("search term: " + whatToSearch)
-    break;
-
-    case 'spotify-this-song': console.log("spotify-this-song selected");
-        if (!whatToSearch) {
-            whatToSearch = "The Sign";
-            searchSpotify(whatToSearch);
-        }
-        searchSpotify(whatToSearch);        
-    break;
-
-    case 'movie-this': console.log("movie-this selected");
-        if (!whatToSearch) {
-            whatToSearch = "Mr. Nobody"
-            searchMovie(whatToSearch);
-        }
-        searchMovie(whatToSearch);
-    break;
-
-    case 'do-what-it-says': console.log("do-what-it-says selected");
-    break;
+// DO WHAT IT SAYS COMMAND
+if (command === 'do-what-it-says' && !whatToSearch) {
+    dowhatItSays()
+    return;
 }
 
+// SEARCH FOR CONCERT, SONG, MOVIE COMMAND
+function start(command) {    
+    switch (command) {
+        case 'concert-this': 
+            searchBands(whatToSearch);
+        break;
+
+        case 'spotify-this-song':
+            if (!whatToSearch) {
+                whatToSearch = "The Sign";
+                searchSpotify(whatToSearch);
+            }
+            searchSpotify(whatToSearch); 
+        break;
+
+        case 'movie-this': 
+            if (!whatToSearch) {
+                whatToSearch = "Mr. Nobody"
+                searchMovie(whatToSearch);
+            }
+            searchMovie(whatToSearch);
+        break;
+    }
+}
 var divider = "\n--------------------------------------------------------\n"
 
+// SEARCH SPOTIFY
 function searchSpotify(term) {
+    var divider = "\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n"
     var spotify = new Spotify(keys.spotify);
 
     spotify.search({ type: 'track', query: term }, function(err, response) {
@@ -57,23 +57,25 @@ function searchSpotify(term) {
             var album = song.album.name;
 
             var details = [
+                "SONG SEARCH\n",
                 "Song Name: " + songName, 
                 "Artist: " + artist, 
                 "Preview Link: " + preview, 
                 "Album: " + album,
             ].join("\n");
 
-        fs.appendFile("logSong.txt", details + divider, (err) => {
+        fs.appendFile("logSong.txt", divider + details + divider, (err) => {
             if (err) throw err;
             console.log('The "data to append" was appended to file!');
         });
-
         console.log(divider + details + divider)
     });
 }
 
 
+// SEARCH BANDS IN TOWN
 function searchBands(term) {
+    var divider = "\n--------------------------------------------------------\n"
     var API = keys.bandsInTown;
 
     axios.get("https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API)
@@ -89,10 +91,17 @@ function searchBands(term) {
             var momentString = momentObj.format('L'); 
 
             var details = [
+                "CONCERT SEARCH\n",
                 "Venue: " + venue,
                 "Location: " + location,
                 "Date: " + momentString,
             ].join("\n")
+            
+            fs.appendFile("logSong.txt", divider + details + divider, (err) => {
+                if (err) throw err;
+                console.log('The "data to append" was appended to file!');
+            });
+
             console.log(divider + details + divider);
 
         })
@@ -103,15 +112,16 @@ function searchBands(term) {
         });
 }
 
-
+// SEARCH OMDB
 function searchMovie(term) {
+    var divider = "\n========================================================\n"
+
     var API = keys.OMDB;
     console.log("API for OMDB: " + API)
 
     axios.get("https://www.omdbapi.com/?t=" + term + "&apikey=" + API)
         .then(function (response) {
-            // handle success
-            console.log(JSON.stringify(response.data, null, 2));
+            // console.log(JSON.stringify(response.data, null, 2));
 
             var data = response.data
 
@@ -125,6 +135,7 @@ function searchMovie(term) {
             var actors = data.Actors;
 
             var details = [
+                "MOVIE SEARCH\n",
                 "Title: " + title,
                 "Year: " + year,
                 "IMDB Rating: " + rating,
@@ -134,6 +145,12 @@ function searchMovie(term) {
                 "Plot: " + plot,
                 "Actors: " + actors,
             ].join("\n")
+            
+            fs.appendFile("logSong.txt", divider + details + divider, (err) => {
+                if (err) throw err;
+                console.log('The "data to append" was appended to file!');
+            });
+
             console.log(divider + details + divider);
         })
         .catch(function (error) {
@@ -142,19 +159,23 @@ function searchMovie(term) {
         .finally(function () {
         });
 }
-// node liri.js movie-this '<movie name here>'
-// This will output the following information to your terminal/bash window:
-    //   * Title of the movie.
-    //   * Year the movie came out.
-    //   * IMDB Rating of the movie.
-    //   * Rotten Tomatoes Rating of the movie.
-    //   * Country where the movie was produced.
-    //   * Language of the movie.
-    //   * Plot of the movie.
-    //   * Actors in the movie.
-    // If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
+
+// DO WHAT IT SAYS
+function dowhatItSays() {
+    fs.readFile("random.txt", "utf-8", function(error, data) {
+        if (error) {
+            return console.log(error)
+        }
+
+        var randomArr = data.split(",");
+        var commandRead = randomArr[0];
+        var index1 = randomArr[1];
+        whatToSearch = index1.slice(1, index1.length-1);
+
+        start(commandRead);
+    })
+}
+
+start(command)
     
-// node liri.js do-what-it-says
-// Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
-
