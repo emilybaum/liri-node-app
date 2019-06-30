@@ -71,17 +71,20 @@ function searchBands(term) {
 
     axios.get("https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API)
         .then(function (response) {
-            
+
             var venue = response.data[0].venue.name;
             var location = response.data[0].venue.city + ", " + response.data[0].venue.region;
 
             // Date of the Event(use moment to format this as "MM/DD/YYYY")
-            var date = response.data[0].datetime;
+            var dateString = response.data[0].datetime
+            var dateObj = new Date(dateString);
+            var momentObj = moment(dateObj);
+            var momentString = momentObj.format('L'); // 2016-07-15
 
             var details = [
                 "Venue: " + venue,
                 "Location: " + location,
-                "Date: " + date,
+                "Date: " + momentString,
             ].join("\n")
             console.log(divider + details + divider);
 
@@ -93,12 +96,6 @@ function searchBands(term) {
         });
 }
 
-        
-// node liri.js concert-this '<_____>'
-// "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
-    // Name of the venue
-    // Venue location
-    // Date of the Event(use moment to format this as "MM/DD/YYYY")
 
 
 // node liri.js movie-this '<movie name here>'
@@ -113,7 +110,7 @@ function searchBands(term) {
     //   * Actors in the movie.
     // If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
-
+    
 // node liri.js do-what-it-says
 // Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
