@@ -22,10 +22,15 @@ switch (command) {
     break;
 
     case 'spotify-this-song': console.log("spotify-this-song selected");
-        searchSpotify(whatToSearch);
+        if (!whatToSearch) {
+            whatToSearch = "The Sign";
+            searchSpotify(whatToSearch);
+        }
+        searchSpotify(whatToSearch);        
     break;
 
     case 'movie-this': console.log("movie-this selected");
+        searchMovie(whatToSearch);
     break;
 
     case 'do-what-it-says': console.log("do-what-it-says selected");
@@ -36,7 +41,7 @@ var divider = "\n--------------------------------------------------------\n"
 
 function searchSpotify(term) {
     var spotify = new Spotify(keys.spotify);
-    console.log(term + " was searched");
+
     spotify.search({ type: 'track', query: term }, function(err, response) {
             if (err) {
                 return console.log(err);
@@ -66,8 +71,6 @@ function searchSpotify(term) {
 
 function searchBands(term) {
     var API = keys.bandsInTown;
-    var url = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API;
-    console.log(url)
 
     axios.get("https://rest.bandsintown.com/artists/" + term + "/events?app_id=" + API)
         .then(function (response) {
@@ -79,7 +82,7 @@ function searchBands(term) {
             var dateString = response.data[0].datetime
             var dateObj = new Date(dateString);
             var momentObj = moment(dateObj);
-            var momentString = momentObj.format('L'); // 2016-07-15
+            var momentString = momentObj.format('L'); 
 
             var details = [
                 "Venue: " + venue,
@@ -97,7 +100,44 @@ function searchBands(term) {
 }
 
 
+function searchMovie(term) {
+    var API = keys.OMDB;
+    console.log("API for OMDB: " + API)
 
+    axios.get("https://www.omdbapi.com/?t=" + term + "&apikey=" + API)
+        .then(function (response) {
+            // handle success
+            console.log(JSON.stringify(response.data, null, 2));
+
+            var data = response.data
+
+            var title = data.Title;
+            var year = data.Year;
+            var rating = data.Ratings[0].Value;
+            var tomatoes = data.Ratings[1].value;
+            var country = data.Country;
+            var language = data.Language;
+            var plot = data.Plot;
+            var actors = data.Actors;
+
+            var details = [
+                "Title: " + title,
+                "Year: " + year,
+                "IMDB Rating: " + rating,
+                "Rotten Tomatoes Rating: " + tomatoes,
+                "Country: " + country,
+                "Language: " + language,
+                "Plot: " + plot,
+                "Actors: " + actors,
+            ].join("\n")
+            console.log(divider + details + divider);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+        .finally(function () {
+        });
+}
 // node liri.js movie-this '<movie name here>'
 // This will output the following information to your terminal/bash window:
     //   * Title of the movie.
