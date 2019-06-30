@@ -30,6 +30,10 @@ switch (command) {
     break;
 
     case 'movie-this': console.log("movie-this selected");
+        if (!whatToSearch) {
+            whatToSearch = "Mr. Nobody"
+            searchMovie(whatToSearch);
+        }
         searchMovie(whatToSearch);
     break;
 
