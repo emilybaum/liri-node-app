@@ -51,8 +51,7 @@ function searchSpotify(term) {
                 return console.log(err);
             }
             
-            for (var i = 0; i < 6; i++) {
-            // console.log(JSON.stringify(response.tracks.items[i], null, 2))         
+            for (var i = 0; i < 5; i++) {
 
                 var song = response.tracks.items[i];
                 var songName = song.name;
@@ -72,7 +71,7 @@ function searchSpotify(term) {
 
             fs.appendFile("logSong.txt", divider + details + divider, (err) => {
                 if (err) throw err;
-                console.log('The "data to append" was appended to file!');
+                // console.log('The "data to append" was appended to file!');
             });
             console.log(divider + details + divider)
         }
@@ -104,9 +103,9 @@ function searchBands(term) {
                 "Date: " + momentString,
             ].join("\n")
             
-            fs.appendFile("logSong.txt", divider + details + divider, (err) => {
+            fs.appendFile("logConert.txt", divider + details + divider, (err) => {
                 if (err) throw err;
-                console.log('The "data to append" was appended to file!');
+                // console.log('The "data to append" was appended to file!');
             });
 
             console.log(divider + details + divider);
@@ -128,7 +127,6 @@ function searchMovie(term) {
 
     axios.get("https://www.omdbapi.com/?t=" + term + "&apikey=" + API)
         .then(function (response) {
-            // console.log(JSON.stringify(response.data, null, 2));
 
             var data = response.data
 
@@ -153,9 +151,9 @@ function searchMovie(term) {
                 "Actors: " + actors,
             ].join("\n")
             
-            fs.appendFile("logSong.txt", divider + details + divider, (err) => {
+            fs.appendFile("logMovie.txt", divider + details + divider, (err) => {
                 if (err) throw err;
-                console.log('The "data to append" was appended to file!');
+                // console.log('The movie was appended to file!');
             });
 
             console.log(divider + details + divider);

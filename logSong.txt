@@ -297,3 +297,57 @@ Artist: U2
 Preview Link: https://open.spotify.com/track/3Dm4bpRoGKlmfd98Qp7cVK
 Album: The Joshua Tree (Super Deluxe)
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: Sunday Bloody Sunday - Remastered 2008
+Artist: U2
+Preview Link: https://open.spotify.com/track/6C4LXC9UFH1IKiHYOp0BiJ
+Album: War (Remastered)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: Sunday Bloody Sunday - Remastered 2008
+Artist: U2
+Preview Link: https://open.spotify.com/track/4nuUssdgKFy2QyYHHNkZQW
+Album: War (Deluxe Edition Remastered)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: Sunday Bloody Sunday
+Artist: U2
+Preview Link: https://open.spotify.com/track/6Pztn1vmTohZrFICkaDOEa
+Album: U218 Singles
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: Sunday Bloody Sunday - Live
+Artist: U2
+Preview Link: https://open.spotify.com/track/6n1sjnYCaURlVj4phCl7jQ
+Album: Under A Blood Red Sky (Remastered)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 6
+
+Song Name: Sunday Bloody Sunday - Live
+Artist: U2
+Preview Link: https://open.spotify.com/track/3Dm4bpRoGKlmfd98Qp7cVK
+Album: The Joshua Tree (Super Deluxe)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: Sunday Bloody Sunday
+Artist: Saul Williams
+Preview Link: https://open.spotify.com/track/1Y500sRGT52viF7MBm3Ji2
+Album: The Inevitable Rise And Liberation Of Niggy Tardust
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
