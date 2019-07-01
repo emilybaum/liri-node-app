@@ -3,7 +3,7 @@ var fs = require("fs");
 var keys = require("./keys.js");
 var axios = require('axios');
 var moment = require('moment');
-var inquirer = require('inquirer');
+// var inquirer = require('inquirer');
 var Spotify = require('node-spotify-api');
 
 var command = process.argv[2]
@@ -39,36 +39,43 @@ function start(command) {
         break;
     }
 }
-var divider = "\n--------------------------------------------------------\n"
 
 // SEARCH SPOTIFY
 function searchSpotify(term) {
-    var divider = "\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n"
+    var divider = "\n--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---\n"
+
     var spotify = new Spotify(keys.spotify);
 
     spotify.search({ type: 'track', query: term }, function(err, response) {
             if (err) {
                 return console.log(err);
             }
-            var song = response.tracks.items[0];
-            var songName = song.name;
-            var artist = song.artists[0].name;
-            var preview = song.external_urls.spotify;
-            var album = song.album.name;
+            
+            for (var i = 0; i < 6; i++) {
+            // console.log(JSON.stringify(response.tracks.items[i], null, 2))         
 
-            var details = [
-                "SONG SEARCH\n",
-                "Song Name: " + songName, 
-                "Artist: " + artist, 
-                "Preview Link: " + preview, 
-                "Album: " + album,
-            ].join("\n");
+                var song = response.tracks.items[i];
+                var songName = song.name;
+                var artist = song.artists[0].name;
+                var preview = song.external_urls.spotify;
+                var album = song.album.name;
 
-        fs.appendFile("logSong.txt", divider + details + divider, (err) => {
-            if (err) throw err;
-            console.log('The "data to append" was appended to file!');
-        });
-        console.log(divider + details + divider)
+                var number = i + 1
+
+                var details = [
+                    "SONG SEARCH: response " + number + "\n",
+                    "Song Name: " + songName, 
+                    "Artist: " + artist, 
+                    "Preview Link: " + preview, 
+                    "Album: " + album,
+                ].join("\n");
+
+            fs.appendFile("logSong.txt", divider + details + divider, (err) => {
+                if (err) throw err;
+                console.log('The "data to append" was appended to file!');
+            });
+            console.log(divider + details + divider)
+        }
     });
 }
 
