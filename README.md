@@ -12,6 +12,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
     * concert-this
     * do-what-it-says
 1. After the command, input the detail you are searching for (no need for quotes)
+1. All responses from commands performed will be stored in the corresponding log file
 
 ## Example search in the command line
 **node liri.js movie-this elf**
@@ -21,7 +22,7 @@ INSERT GIF
 
 
 # What happens with _spotify-this-song_
-The node-spotify-api npm package will be triggered and will call the Spotify API. Then, this will show the following information about the song in your terminal/bash window:
+The node-spotify-api npm package will be triggered and will call the Spotify API. Then, this will show the following information about the song in your terminal/bash window and store the response into a corresponding log file:
 * Artist(s)
 * The song's name
 * A preview link of the song from Spotify
@@ -29,7 +30,7 @@ The node-spotify-api npm package will be triggered and will call the Spotify API
 _If no song is provided then your program will default to "The Sign" by Ace of Base._
 
 # What happens with _movie-this_
-The OMDB API will be triggered and calls this API. Then, this will output the following information to your terminal/bash window:
+The OMDB API will be triggered and calls this API. Then, this will output the following information to your terminal/bash window and store the response into a corresponding log file:
 * Title of the movie.
 * Year the movie came out.
 * IMDB Rating of the movie.
@@ -41,7 +42,7 @@ The OMDB API will be triggered and calls this API. Then, this will output the fo
 _If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'_
 
 # What happens with _concert-this_
-The Bands in Town Artist Events API will be triggered for an artist and render the following information about each event to the terminal:
+The Bands in Town Artist Events API will be triggered for an artist and render the following information about each event to the terminal and store the response into a corresponding log file:
 * Name of the venue
 * Venue location
 * Date of the Event
