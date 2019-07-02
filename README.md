@@ -1,7 +1,17 @@
 # liri-node-app
 LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters (Spotify for songs, Bands in Town for concerts, and OMDB for movies) and gives you back data.
 
-*When using Liri, you will need to follow these instructions to make it work*
+_When using Liri, you will need to first innstall these packages from npm:_
+* Node-Spotify-API 
+* Axios
+* Moment
+
+_You will also need to create your own API keys for the following:_
+* Spotify API
+* OMDB API
+* Bands In Town API
+
+_Then, follow these instructions to make it work_
 # Steps to use
 **(assuming you clone to you machine)**
 1. In the command line write: node liri.js
