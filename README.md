@@ -3,7 +3,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
 
 *When using Liri, you will need to follow these instructions to make it work*
 # Steps to use
-## (assuming you clone to you machine)
+**(assuming you clone to you machine)**
 1. In the command line write: node liri.js
 1. Decide if you want to search for a song, concert, or movire
 1. Use the following corresponding command in the command line
@@ -14,7 +14,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
 1. After the command, input the detail you are searching for (no need for quotes)
 
 ## Example search in the command line
-node liri.js movie-this elf
+**node liri.js movie-this elf**
 
 
 INSERT GIF
