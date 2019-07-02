@@ -351,3 +351,48 @@ Artist: Saul Williams
 Preview Link: https://open.spotify.com/track/1Y500sRGT52viF7MBm3Ji2
 Album: The Inevitable Rise And Liberation Of Niggy Tardust
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: Pompeii
+Artist: Bastille
+Preview Link: https://open.spotify.com/track/3gbBpTdY8lnQwqxNCcf795
+Album: Bad Blood
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: Bad Blood
+Artist: Taylor Swift
+Preview Link: https://open.spotify.com/track/273dCMFseLcVsoSWx59IoE
+Album: 1989
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: Bad Blood
+Artist: Taylor Swift
+Preview Link: https://open.spotify.com/track/6xsEAm6w9oMQYYg3jkEkMT
+Album: Bad Blood
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: Bad Blood
+Artist: Nao
+Preview Link: https://open.spotify.com/track/4Iam3vZMJCMltFkK9mNruw
+Album: For All We Know
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: Bad Blood
+Artist: Taylor Swift
+Preview Link: https://open.spotify.com/track/4SHyS2ThjrS1iBGruKweCz
+Album: 1989 (Big Machine Radio Release Special)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

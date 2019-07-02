@@ -123,7 +123,6 @@ function searchMovie(term) {
     var divider = "\n========================================================\n"
 
     var API = keys.OMDB;
-    console.log("API for OMDB: " + API)
 
     axios.get("https://www.omdbapi.com/?t=" + term + "&apikey=" + API)
         .then(function (response) {

@@ -17,8 +17,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
 ## Example search in the command line
 **node liri.js movie-this elf**
 
-
-INSERT GIF
+![](./demo-movie-this.gif)
 
 
 # What happens with _spotify-this-song_
