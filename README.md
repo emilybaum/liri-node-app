@@ -11,7 +11,7 @@ _You will also need to create your own API keys for the following:_
 * OMDB API
 * Bands In Town API
 
-_Then, follow these instructions to make it work_
+_Once the above is complete, you can follow these instructions to make it work..._
 # Steps to use
 **(assuming you clone to you machine)**
 1. In the command line write: node liri.js
