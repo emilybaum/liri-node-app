@@ -103,7 +103,7 @@ function searchBands(term) {
                 "Date: " + momentString,
             ].join("\n")
             
-            fs.appendFile("logConert.txt", divider + details + divider, (err) => {
+            fs.appendFile("logConcert.txt", divider + details + divider, (err) => {
                 if (err) throw err;
                 // console.log('The "data to append" was appended to file!');
             });
