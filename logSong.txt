@@ -396,3 +396,183 @@ Artist: Taylor Swift
 Preview Link: https://open.spotify.com/track/4SHyS2ThjrS1iBGruKweCz
 Album: 1989 (Big Machine Radio Release Special)
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: Testify
+Artist: Rage Against The Machine
+Preview Link: https://open.spotify.com/track/7lmeHLHBe4nmXzuXc0HDjk
+Album: The Battle Of Los Angeles
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: Testify
+Artist: Ghost God
+Preview Link: https://open.spotify.com/track/61j3F9bKvO5ACikVyiX409
+Album: Testify
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: TESTIFY
+Artist: NEEDTOBREATHE
+Preview Link: https://open.spotify.com/track/5OpjJ9qy54D3PzQJ1s4Q9X
+Album: H A R D L O V E
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: Testify
+Artist: Social Club Misfits
+Preview Link: https://open.spotify.com/track/7LfFUe93bFKb8f8DF1dZCB
+Album: Testify
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: Testify
+Artist: Future
+Preview Link: https://open.spotify.com/track/31suvgK8vvhfVXyEa2JpH8
+Album: HNDRXX
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: Testify
+Artist: Rage Against The Machine
+Preview Link: https://open.spotify.com/track/7lmeHLHBe4nmXzuXc0HDjk
+Album: The Battle Of Los Angeles
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: Testify
+Artist: Ghost God
+Preview Link: https://open.spotify.com/track/61j3F9bKvO5ACikVyiX409
+Album: Testify
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: Testify
+Artist: Social Club Misfits
+Preview Link: https://open.spotify.com/track/7LfFUe93bFKb8f8DF1dZCB
+Album: Testify
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: Testify
+Artist: Future
+Preview Link: https://open.spotify.com/track/31suvgK8vvhfVXyEa2JpH8
+Album: HNDRXX
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: TESTIFY
+Artist: NEEDTOBREATHE
+Preview Link: https://open.spotify.com/track/5OpjJ9qy54D3PzQJ1s4Q9X
+Album: H A R D L O V E
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: I Want It That Way - Reimagined
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/62KnDRUq6CBcT7Bqb9IHKV
+Album: I Want It That Way (Reimagined)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: I Want It That Way
+Artist: Mick Jensen
+Preview Link: https://open.spotify.com/track/0ympGdYdVlZ8zo6irdjMvd
+Album: I Want It That Way
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/47BBI51FKFwOMlIiX6m8ya
+Album: Millennium
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: I Want It That Way
+Artist: Anthem Lights
+Preview Link: https://open.spotify.com/track/3Ww6kEWxLh4Ub4WPJ9hMtA
+Album: Covers Part IV
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 1
+
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 2
+
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/47BBI51FKFwOMlIiX6m8ya
+Album: Millennium
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 4
+
+Song Name: I Want It That Way
+Artist: Anthem Lights
+Preview Link: https://open.spotify.com/track/3Ww6kEWxLh4Ub4WPJ9hMtA
+Album: Covers Part IV
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 5
+
+Song Name: I Want It That Way
+Artist: Mick Jensen
+Preview Link: https://open.spotify.com/track/0ympGdYdVlZ8zo6irdjMvd
+Album: I Want It That Way
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+SONG SEARCH: response 3
+
+Song Name: I Want It That Way - Reimagined
+Artist: Backstreet Boys
+Preview Link: https://open.spotify.com/track/62KnDRUq6CBcT7Bqb9IHKV
+Album: I Want It That Way (Reimagined)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

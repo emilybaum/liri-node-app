@@ -25,10 +25,17 @@ _Once the above is complete, you can follow these instructions to make it work..
 1. All responses from commands performed will be stored in the corresponding log file
 
 ## Example search in the command line
-**node liri.js movie-this elf**
-
+**node liri movie-this elf**
 ![](./demo-movie-this.gif)
 
+**node liri spotify-this-song testify**
+![](./demo-spotify-this-song.gif)
+
+**node liri concert-this jonas brothers**
+![](./demo-concert-this.gif)
+
+**node liri do-what-it-says**
+![](./demo-do-what-it-says.gif)
 
 # What happens with _spotify-this-song_
 The node-spotify-api npm package will be triggered and will call the Spotify API. Then, this will show the following information about the song in your terminal/bash window and store the response into a corresponding log file:
